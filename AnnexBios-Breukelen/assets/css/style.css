@@ -1,0 +1,211 @@
+#hero {
+  background-image: url("../images/header/header_afbeelding.jpg");
+  background-color: black;
+  background-size: cover;
+  width: 100%;
+  max-height: 1540px;
+}
+#hero .hero_wrapper {
+  padding: clamp(2.1875rem, -0.4666rem + 10.8055vw, 12.5rem) var(--main_wrapper);
+}
+#hero .hero_wrapper .hero_info__container {
+  background-color: var(--groen);
+  height: clamp(11.75rem, 8.6616rem + 12.5737vw, 23.75rem);
+  color: var(--wit);
+  margin-bottom: clamp(0.625rem, -0.0667rem + 2.816vw, 3.3125rem);
+}
+#hero .hero_wrapper .hero_info__container .hero_info {
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+  padding: 11px;
+}
+#hero .hero_wrapper .hero_info__container .hero_info h1 {
+  font-size: clamp(0.8125rem, 0.0887rem + 2.947vw, 3.625rem);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#hero .hero_wrapper .hero_info__container .hero_info p {
+  font-size: clamp(0.8125rem, 0.6516rem + 0.6549vw, 1.4375rem);
+  margin-bottom: auto;
+}
+#hero .hero_wrapper .hero_info__container .hero_info button {
+  font-size: clamp(0.8125rem, 0.6999rem + 0.4584vw, 1.25rem);
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 35px;
+}
+#hero .hero_wrapper .hero_info__container .hero_info button a {
+  color: var(--groen);
+}
+@media only screen and (min-width: 1000px) {
+  #hero .hero_wrapper .hero_info__container .hero_info {
+    padding: 40px;
+    height: 75%;
+  }
+  #hero .hero_wrapper .hero_info__container .hero_info h1 {
+    margin-bottom: auto;
+  }
+  #hero .hero_wrapper .hero_info__container .hero_info p {
+    width: 650px;
+  }
+  #hero .hero_wrapper .hero_info__container .hero_info button {
+    height: 55px;
+    width: 320px;
+  }
+}
+#hero .hero_contact__container {
+  background-color: var(--wit);
+  max-height: 670px;
+  height: 100%;
+}
+#hero .hero_contact__container .hero_contact {
+  padding: 11px;
+}
+#hero .hero_contact__container .hero_contact .hero__maps {
+  position: relative;
+  max-width: 775px;
+  max-height: 585px;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .locatie_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper {
+  background-color: var(--groen);
+  color: white;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper .contact_info {
+  padding: 0 15px;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper .contact_info img {
+  max-width: 20px;
+  width: 100%;
+  margin-right: 15px;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper .contact_info p {
+  font-size: 13px;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper .hero_address {
+  padding: 15px 0 0 15px;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper .hero_bereikbaar {
+  padding: 15px 0 15px 15px;
+}
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper .hero_address,
+#hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper .hero_number {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#hero .hero_contact__container .hero_contact_info__container {
+  width: 100%;
+}
+#hero .hero_contact__container .hero_contact_info__container img {
+  width: 100%;
+}
+@media only screen and (min-width: 400px) {
+  #hero .hero_contact_info__wrapper {
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 650px) {
+  #hero .hero_contact__container .hero_contact {
+    display: flex;
+  }
+  #hero .hero_contact__container .hero_contact .hero__maps {
+    width: 50%;
+    height: unset;
+    margin-right: 20px;
+  }
+  #hero .hero_contact__container .hero_contact .hero__maps img {
+    width: 100%;
+  }
+  #hero .hero_contact__container .hero_contact .hero__maps .hero_contact_info__wrapper {
+    bottom: 0;
+  }
+  #hero .hero_contact__container .hero_contact_info__container {
+    width: 50%;
+  }
+  #hero .hero_contact__container .hero_contact_info__container img {
+    width: 100%;
+  }
+}
+
+#film_agenda {
+  color: var(--groen);
+}
+#film_agenda .film_agenda__wrapper {
+  padding: 0 var(--main_wrapper);
+}
+#film_agenda .film_agenda__wrapper .film_upper__container .film_agenda_title {
+  background-color: var(--wit);
+  height: 45px;
+  width: 100%;
+}
+#film_agenda .film_agenda__wrapper .film_upper__container .film_agenda_title h2 {
+  margin-left: 11px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: clamp(1.25rem, 0.625rem + 3.125vw, 4.375rem);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#film_agenda .film_agenda__wrapper .film_upper__container .checkboxes {
+  background-color: var(--wit);
+  height: 40px;
+  margin-bottom: 5px;
+}
+#film_agenda .film_agenda__wrapper .film_upper__container .checkboxes label {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 11px;
+  font-size: clamp(0.8125rem, 0.725rem + 0.4375vw, 1.25rem);
+  text-transform: uppercase;
+}
+#film_agenda .film_agenda__wrapper .film_upper__container .checkboxes label input {
+  margin-right: 5px;
+}
+@media only screen and (min-width: 1000px) {
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_agenda_title {
+    height: 113px;
+    width: 776px;
+  }
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_agenda_title h2 {
+    margin-left: 30px;
+  }
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_upper_container__checklist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 776px;
+  }
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_upper_container__checklist img {
+    margin-right: 10px;
+  }
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_upper_container__checklist .checkboxes {
+    height: 46px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    width: 100%;
+  }
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_upper_container__checklist .checkboxes label {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 0px;
+    margin-left: 10px;
+  }
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_upper_container__checklist .checkboxes label input {
+    margin-right: 5px;
+  }
+  #film_agenda .film_agenda__wrapper .film_upper__container .film_upper_container__checklist .categorie_checkbox {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

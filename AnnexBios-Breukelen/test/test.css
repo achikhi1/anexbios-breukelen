@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+body{
+    font-family: 'lato', sans-serif;
+    margin: 0%;
+}
+#footer{
+    width: 100%;
+    height: 350px;
+    margin-top: 250px;
+    background-color: #666666;
+    display: flex;
+}
+
+.footer_div1{
+    margin:  0 0 0 10%;
+    width: 40%;
+    height: 250px;
+}
+
+.footer_div2{
+    width: 30%;
+    height: 250px;
+}
+
+.logo_footer{
+    width: 50%;
+    height: 90px;
+    margin: 20px 0 0 0%;
+    color: white;
+    position: relative;
+    top: 39px;
+}
+
+.footer_tekstcontainer{
+    height: 120px;
+    width: 350px;
+    margin: 20px 0 0 0%;
+}
+
+.footer_tekst{
+    color: white;
+}
+
+.leestmeer{
+    height: 25px;
+    width: 110px;
+    margin: 15px 0 0 0%;
+    text-align: center;
+    padding-top: 6px;
+    background-color: white;
+    color: #666666;
+}
+
+.navigeer_tekst{
+    padding: 75px 0 25px 0;
+    color: white;
+}
+
+.list_item{
+    padding: 5px 0 0 0;
+    list-style-type: none;
+    color: white;
+    margin-left: -41px;
+}
+
+.volg_ons{
+    color: white;
+    padding: 75px 0 0 0;
+}
+
+.footer_div3{
+    width: 30%;
+    height: 250px;
+}
+
+.icons{
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer_icon{
+    width: 40px;
+    height: 40px;
+    padding: 5px 1% 0 2%;
+    font-size: 28px;
+    color:white;
+}
+#listed{
+    margin-top: -41px;
+} 
+@media screen and (max-width: 768px) {
+    #footer{
+        
+    }
+}

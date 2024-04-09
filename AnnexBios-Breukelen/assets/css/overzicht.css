@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+
+#film_agenda_xl__container {
+  position: relative;
+}
+
+#film_agenda_xl__container .bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+#film_agenda_xl__container .bg_img img {
+  width: 100%;
+  height: 100%;
+}
+
+#film_agenda {
+  position: relative;
+  padding-top: 55px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .bg_img {
+    max-height: 1540px;
+  }
+
+  #film_agenda {
+    padding-top: 70px;
+  }
+}

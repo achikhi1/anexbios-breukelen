@@ -1,0 +1,316 @@
+body {
+  background-color: black;
+}
+
+main {
+  padding: 0 var(--main_wrapper);
+  background-color: unset;
+}
+
+#bestellen {
+  margin-top: 50px;
+}
+#bestellen .bestellen__wrapper .film_title {
+  background-color: var(--wit);
+  width: 100%;
+  padding: 5px 0 5px 0;
+  color: var(--groen);
+}
+#bestellen .bestellen__wrapper .film_title h2 {
+  margin-left: 11px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: clamp(1.25rem, 0.625rem + 3.125vw, 4.375rem);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#bestellen .bestellen__wrapper .film_upper_container__checklist {
+  margin-top: 20px;
+}
+#bestellen .bestellen__wrapper .film_upper_container__checklist .checkboxes {
+  background-color: var(--wit);
+  height: 40px;
+  margin-bottom: 5px;
+}
+#bestellen .bestellen__wrapper .film_upper_container__checklist .checkboxes label {
+  color: var(--groen);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 11px;
+  font-size: clamp(0.8125rem, 0.725rem + 0.4375vw, 1.25rem);
+  text-transform: uppercase;
+}
+#bestellen .bestellen__wrapper .bestel_container {
+  color: var(--groen);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card {
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card__picture img {
+  width: 100%;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container {
+  background-color: var(--wit);
+  margin-top: -3px;
+  height: 330px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container .movie_card_info__wrapper {
+  padding: 15px;
+  height: calc(100% - 30px);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container .movie_card_info__wrapper h2 {
+  font-size: clamp(0.9375rem, 0.8125rem + 0.625vw, 1.5625rem);
+  color: var(--grijs);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container .movie_card_info__wrapper .movie_rate {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container .movie_card_info__wrapper h3 {
+  color: var(--grijs);
+  font-size: clamp(0.9375rem, 0.85rem + 0.4375vw, 1.375rem);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container .movie_card_info__wrapper .movie_desc {
+  color: var(--grijs);
+  height: 50%;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie {
+  margin-top: 20px;
+  background-color: var(--wit);
+  width: 100%;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper {
+  padding: 10px 20px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table {
+  margin-bottom: 10px;
+  width: 100%;
+  color: var(--grijs);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table th {
+  text-transform: uppercase;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table .border-point {
+  border-bottom: 1px solid var(--grijs);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table .aantal {
+  width: 0;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table td,
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table th {
+  height: 35px;
+  text-align: left;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .voucher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .voucher h2 {
+  font-size: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+  margin-right: 10px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .voucher input {
+  width: 100%;
+  margin-right: 10px;
+  font-size: 11px;
+  padding: 5px 10px;
+  border: 1px solid var(--groen);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .voucher button {
+  background-color: var(--groen);
+  padding: 4px;
+  color: white;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .stoelen-reserveren .filmdoek {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .stoelen-reserveren .filmdoek hr {
+  border: 2px solid #5C973A;
+  width: 70%;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .stoelen-reserveren .filmdoek p {
+  color: #5C973A;
+  font-size: 12px;
+  font-weight: 600;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .stoelen-reserveren .stoelen {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .stoelen-reserveren .stoelen .stoel-parent {
+  width: 55px;
+  height: 48px;
+  scale: 0.7;
+  background-color: #95C579;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .stoelen-reserveren .stoelen .stoel-parent .stoel-wit-laag {
+  position: absolute;
+  top: 0;
+  width: 35px;
+  height: 18px;
+  background-color: var(--wit);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .stoelen-reserveren .stoelen .stoel-parent .stoel-child {
+  top: 0;
+  width: 35px;
+  height: 17px;
+  background-color: #B1D59D;
+  border-bottom: 2px solid #ABD295;
+  border-right: 2px solid #ABD295;
+  border-left: 2px solid #ABD295;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling {
+  margin-top: 50px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling .controleer-bestelling__container {
+  padding: 10px;
+  border: 1px solid var(--groen);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling .controleer-bestelling__container img {
+  width: 100%;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling .controleer-bestelling__container .film-info {
+  color: var(--grijs);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling .controleer-bestelling__container .film-info .movie_icons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling .controleer-bestelling__container .film-info .movie_icons img {
+  width: clamp(1.875rem, 1.6875rem + 0.9375vw, 2.8125rem);
+}
+#bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .controleer-bestelling .controleer-bestelling__container .film-info .movie_icons img:not(:last-child) {
+  margin-right: 5px;
+}
+@media only screen and (min-width: 650px) {
+  #bestellen .bestellen__wrapper .film_title {
+    height: 113px;
+  }
+  #bestellen .bestellen__wrapper .film_title h2 {
+    margin-left: 30px;
+  }
+  #bestellen .bestellen__wrapper .film_upper_container__checklist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 776px;
+  }
+  #bestellen .bestellen__wrapper .film_upper_container__checklist .checkboxes {
+    height: 46px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    width: 100%;
+  }
+  #bestellen .bestellen__wrapper .film_upper_container__checklist .checkboxes label {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 0px;
+    margin-left: 10px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-film-card {
+    max-width: 252px;
+    width: 100%;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card__picture img {
+    width: 100%;
+    height: 350px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container {
+    height: 480px !important;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-film-card .movie_card_info__container .movie_card_info__wrapper h2 {
+    height: 45px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-sectie {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper {
+    padding: 20px 50px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table {
+    margin-bottom: 20px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table td,
+  #bestellen .bestellen__wrapper .bestel_container .bestel-sectie .bestel-sectie_wrapper .bestel-leeftijd-table table th {
+    height: 50px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .voucher {
+    margin-bottom: 80px !important;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .voucher h2 {
+    margin-right: 15px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .voucher input {
+    height: 22px;
+  }
+  #bestellen .bestellen__wrapper .bestel_container .voucher button {
+    background-color: var(--groen);
+    max-width: 240px;
+    height: 35px;
+    width: 100%;
+    padding: 4px;
+    color: white;
+  }
+  #bestellen .bestellen__wrapper .stoelen-reserveren .stoelen {
+    margin-top: 30px !important;
+    justify-content: center;
+  }
+  #bestellen .bestellen__wrapper .stoelen-reserveren .stoelen .stoel-parent {
+    width: 55px !important;
+    height: 48px !important;
+    scale: 1 !important;
+  }
+  #bestellen .bestellen__wrapper .controleer-bestelling .controleer-bestelling__container {
+    display: flex;
+  }
+  #bestellen .bestellen__wrapper .controleer-bestelling .controleer-bestelling__container img {
+    width: 215px !important;
+    margin-right: 15px;
+  }
+  #bestellen .bestellen__wrapper .controleer-bestelling .controleer-bestelling__container .film-info .movie_icons img {
+    width: clamp(1.875rem, 1.6875rem + 0.9375vw, 2.8125rem) !important;
+  }
+}/*# sourceMappingURL=bestellen.css.map */

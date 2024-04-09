@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Font */
+    --typografie: 'Lato', sans-serif;
+    /* Kleur */
+    --wit: #FFFFFF;
+    --groen: #8B9E51;
+    --grijs: #666666;
+    /* Wrapper */
+    --main_wrapper: clamp(1.875rem, 0.125rem + 8.75vw, 10.625rem);
+}
+
+body,
+a {
+    font-family: var(--typografie);
+}
+
+main {
+    background: black;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+}
+
+/* Styling Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px var(--main_wrapper);
+    background-color: var(--wit);;
+}
+
+header .logo {
+    width: clamp(6.875rem, 5.375rem + 7.5vw, 14.375rem);
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .hamburg_menu__closed .bar1,
+header .hamburg_menu__closed .bar2,
+header .hamburg_menu__closed .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: var(--groen);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: clamp(1rem, 0.8875rem + 0.5625vw, 1.2625rem);
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        height: 160px;
+        padding: 0 var(--main_wrapper);
+    }
+
+    header .hamburg_menu__closed {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header nav ul li:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+.snel_ticekts_kopen__container {
+    background-color: var(--groen);
+    width: 100%;
+    height: 140px;
+}
+
+.snel_ticekts_kopen__container form {
+    padding: 0 var(--main_wrapper);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: var(--wit);
+    font-weight: 600;
+    font-size: clamp(1rem, 0.8875rem + 0.5625vw, 1.5625rem);
+}
+
+.snel_ticekts_kopen__container form label {
+    text-transform: uppercase;
+}
+
+.snel_ticekts_kopen__container form select {
+    background-color: #B8CE77;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.snel_ticekts_kopen__container form input {
+    text-transform: uppercase;
+    background-color: var(--wit);
+    border: none;
+    padding: 10px 0;
+    color: var(--groen);
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1000px) {
+    .snel_ticekts_kopen__container {
+        height: 90px;
+    }
+
+    .snel_ticekts_kopen__container form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .snel_ticekts_kopen__container form label {
+        font-size: 25px;
+    }
+
+    .snel_ticekts_kopen__container form select {
+        margin: 0 45px;
+        width: 260px;
+        font-size: 15px;
+    }
+
+    .snel_ticekts_kopen__container form input {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+/* End Styling Header */
+
+/* Styling Movie Cards */
+.movie_card__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.movie_card__container .movie_card:nth-child(6n) {
+    margin-right: 0;
+}
+
+.movie_card__container .movie_card {
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.movie_card__container .movie_card .movie_card__picture img {
+    width: 100%;
+}
+
+.movie_card__container .movie_card .movie_card_info__container {
+    background-color: var(--wit);
+    margin-top: -3px;
+    height: 330px;
+}
+
+.movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper {
+    padding: 15px;
+    height: calc(100% - 30px);
+}
+
+.movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper h2 {
+    font-size: clamp(0.9375rem, 0.8125rem + 0.625vw, 1.5625rem);
+    color: var(--grijs);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper .movie_rate {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper h3 {
+    color: var(--grijs);
+    font-size: clamp(0.9375rem, 0.85rem + 0.4375vw, 1.375rem);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper .movie_desc {
+    color: var(--grijs);
+    height: 50%;
+}
+
+.movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper button {
+    background-color: var(--groen);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper button a {
+    color: var(--wit);
+}
+
+@media only screen and (min-width: 661px) {
+    .movie_card_info__container{
+        height: 480px !important;
+    }
+    .movie_card__container .movie_card {
+        max-width: 252px;
+        width: 100%;
+    }
+
+    .movie_card__container .movie_card .movie_card__picture img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .movie_card__container .movie_card .movie_card_info__container .movie_card_info__wrapper h2 {
+        height: 90px;
+    }
+}
+/* End Styling Movie Cards */
+
+/* Styling Footer */
+#container {
+    color: white;
+    width: 100%;
+    height: 350px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 1%;
+    bottom: 0%;
+    position: absolute;
+}
+
+.tekst {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35%;
+    margin-top: -16%;
+}
+
+.navigeerlinks {
+    padding-bottom: 10px;
+}
+
+.tekst1 {
+    padding-bottom: 10px;
+    padding-left: 61%;
+    margin-top: -14%;
+
+}
+
+.img {
+    width: 20%;
+    height: 20%;
+    padding-left: 61%;
+}
+/* End Styling Footer */
